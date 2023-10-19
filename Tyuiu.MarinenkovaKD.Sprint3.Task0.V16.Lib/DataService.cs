@@ -11,13 +11,13 @@ namespace Tyuiu.MarinenkovaKD.Sprint3.Task0.V16.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double sumSeries = 0;
+            double sumSeries = 1;
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                sumSeries = sumSeries * (Math.Pow((1 / i), -3));
+                sumSeries = sumSeries * (Math.Pow((1.0 / i), -3));
             }
-            return Math.Pow(sumSeries, 1/3);
+            return Math.Round(sumSeries,3);
         }
     }
 }
