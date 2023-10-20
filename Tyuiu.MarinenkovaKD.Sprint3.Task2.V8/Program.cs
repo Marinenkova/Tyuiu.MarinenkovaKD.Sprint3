@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tyuiu.MarinenkovaKD.Sprint3.Task2.V8.Lib;
 
-using Tyuiu.MarinenkovaKD.Sprint3.Task0.V16.Lib;
-
-namespace Tyuiu.MarinenkovaKD.Sprint3.Task0.V16
+namespace Tyuiu.MarinenkovaKD.Sprint3.Task2.V8
 {
     class Program
     {
@@ -17,25 +16,23 @@ namespace Tyuiu.MarinenkovaKD.Sprint3.Task0.V16
             Console.Title = "Спринт #3 | Выполнила: Мариненкова К. Д. | ИСТНб-23-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Оператор цикла for                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #16                                                             *");
+            Console.WriteLine("* Тема: Оператор цикла do-while                                           *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #15                                                             *");
             Console.WriteLine("* Выполнила: Мариненкова Кристина Дмитриевна | ИСТНб-23-1                 *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу используя цикл for, которая вычисляет произведение   *");
-            Console.WriteLine("*                      6                                                  *");
-            Console.WriteLine("* ряда по формуле p =  П (x/i)^3                                          *");
-            Console.WriteLine("*                     i=1                                                 *");
+            Console.WriteLine("* Написать программу используя цикл do...while, которая вычисляет         *");
+            Console.WriteLine("*                                           15                            *");
+            Console.WriteLine("* произведение ряда по формуле при х=2 p =  П (1/(cos(5) + 1)^2           *");
+            Console.WriteLine("*                                          i=1                            *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int value = 5;
             int startValue = 1;
-            int stopValue = 6;
+            int stopValue = 15;
 
-            Console.WriteLine("Переменная X = " + value);
             Console.WriteLine("Стар шага = " + startValue);
             Console.WriteLine("Конец шага = " + stopValue);
 
@@ -43,7 +40,7 @@ namespace Tyuiu.MarinenkovaKD.Sprint3.Task0.V16
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(value, startValue, stopValue));
+            Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(startValue, stopValue));
 
             Console.ReadKey();
         }

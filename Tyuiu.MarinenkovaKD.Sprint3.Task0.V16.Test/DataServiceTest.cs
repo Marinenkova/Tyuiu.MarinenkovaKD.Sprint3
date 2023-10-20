@@ -13,11 +13,12 @@ namespace Tyuiu.MarinenkovaKD.Sprint3.Task0.V16.Test
         {
             DataService ds = new DataService();
 
+            int value = 5;
             int startValue = 1;
-            int stopValue = 11;
+            int stopValue = 6;
 
-            double res = ds.GetMultiplySeries(startValue, stopValue);
-            double wait = 6.36014700928697E+22;
+            double res = ds.GetMultiplySeries(value, startValue, stopValue);
+            double wait = 10220.275;
             Assert.AreEqual(wait, res);
         }
     }

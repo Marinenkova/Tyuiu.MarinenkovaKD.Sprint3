@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.MarinenkovaKD.Sprint3.Task1.V15.Lib;
+using Tyuiu.MarinenkovaKD.Sprint3.Task2.V8.Lib;
 
-namespace Tyuiu.MarinenkovaKD.Sprint3.Task1.V15.Test
+namespace Tyuiu.MarinenkovaKD.Sprint3.Task2.V8.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -12,11 +12,11 @@ namespace Tyuiu.MarinenkovaKD.Sprint3.Task1.V15.Test
         {
             DataService ds = new DataService();
 
-            int value = 2;
             int startValue = 1;
-            int stopValue = 5;
-            double res = ds.GetMultiplySeries(value, startValue, stopValue);
-            double wait = 208845;
+            int stopValue = 15;
+            double res = ds.GetMultiplySeries(startValue, stopValue);
+            double wait = 0.001;
+
             Assert.AreEqual(wait, res);
         }
     }
